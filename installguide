@@ -1,0 +1,13 @@
+To install evdev 
+
+sudo apt install python-dev python-pip gcc
+sudo apt install linux-headers-$(uname -r)
+
+sudo pip install evdev
+
+
+
+
+To test and listen devices 
+
+python3 -m evdev.evtest
