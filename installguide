@@ -11,3 +11,8 @@ sudo pip install evdev
 To test and listen devices 
 
 python3 -m evdev.evtest
+
+
+To install multiprocessin 
+
+pip install multiprocess
