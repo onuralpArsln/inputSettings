@@ -15,4 +15,4 @@ python3 -m evdev.evtest
 
 To install multiprocessin 
 
-pip install multiprocess
+pip install multiprocessing
