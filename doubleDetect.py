@@ -1,13 +1,14 @@
 import evdev
 import multiprocessing 
 
-
+lastUsed=""
 
 
 def listenEvent(deviceAdress, deviceNum):
     device=evdev.InputDevice(deviceAdress)
     for event in device.read_loop():
         if event.type == evdev.ecodes.EV_KEY:
+            lastUsed=deviceAdress
             print(device.name)
             f = open("lastUsed.txt","w")
             f.write(deviceNum)
