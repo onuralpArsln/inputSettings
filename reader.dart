@@ -1,5 +1,12 @@
 import 'dart:async';
 import 'dart:io';
 
-void main(){
-File('lastUsed.txt').readAsString().then((String cons){ print(cons);});}
+void main() {
+  String name = "7824378634278423";
+  File('lastUsed.txt').readAsString().then((String cons) {
+    print(cons);
+    name = cons;
+  });
+  print("name is here");
+  print(name);
+}
